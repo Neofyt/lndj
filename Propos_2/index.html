@@ -1,0 +1,377 @@
+<html>
+	<head>
+		<title>Les Nomades du jeu</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			:focus {
+				outline: none;
+			}
+			
+			@font-face {
+				font-family: 'raleway';
+				src: url('assets/fonts/raleway-medium.ttf') format('truetype');
+				font-style: medium;
+			}
+
+			body {
+				/*height: 2000px;*/
+				font-family: 'open sans';
+				font-weight: 300;
+				font-size: 14px;
+				color: #333;
+			}
+
+			header {
+				position: fixed;
+				width: 100%;
+				height: 50px;
+				
+				background: #fff;
+				/*color: rgba(32, 62, 98, 0.9);*/
+				padding: 3px 15px;
+				line-height: 50px;
+				/*border-bottom: solid 1px rgba(32, 62, 98, 0.9);*/
+				border-bottom: solid 1px  #F26522;
+			}
+
+				header h1 {
+					font-size: 18px;
+					font-family: 'open sans';
+					font-weight: 400;
+				}
+
+				#logo img {
+					margin-top: 12px;
+				}
+
+
+				#header_menu {
+					margin-right: 30px;
+					float: right;
+				}
+
+					#header_menu a {
+						/*color: rgba(32, 62, 98, 0.9);*/
+						color:  #F26522;
+						text-decoration: none;
+						position: relative;
+					}
+
+					a b {
+						display: block;
+						width: 0;
+						/*background-color: rgba(32, 62, 98, 0.9);*/
+						background-color:  #F26522;
+						height: 1px;
+						position: absolute;
+						bottom: 2px;
+						left: 0;
+						-webkit-transition: .3s;
+						-moz-transition: .3s;
+						-o-transition: .3s;
+						-ms-transition: .3s;
+						transition: .3s;
+					}
+
+					a:hover b {
+						width: 100%;
+					}
+
+			section {
+				/*background: rgba(32, 62, 98, 0.9);*/
+				background: #F26522;
+				height: 370px;
+				margin-top: 56px;
+				text-align: left;
+				display: inline-block;
+				width: 100%;
+				font-size: 20px;
+				vertical-align: middle;
+				/*background: #F26522, url('assets/img/logo_lndj.png') 170px 150px no-repeat left center;*/
+				
+			}
+
+				#break {
+					height: 180px;
+				}
+
+				#break h1 {
+					/*font-size: 30px;
+					font-family: 'open sans';*/
+					font-weight: 300;
+					color: #fff;
+					/*margin-top: 70px;*/
+					
+				}
+
+					#break h1 i {
+						font-style: normal;
+						border-bottom: dotted 1px #fff;
+					}
+
+					#break h1 span {
+						font-weight: 400;
+					}
+
+			.clearfix:before, .clearfix:after { content: ""; display: table; }
+			.clearfix:after { clear: both; }
+			.clearfix { zoom: 1; }
+
+			.wrapper {
+				width: 980px;
+				margin: 0 auto;
+			}
+			
+				.wrapper img {
+					/*margin : 0 15px;
+					float : left;*/
+				}
+				
+				#title {
+					font: 60px 'raleway';
+					background: #F26522 url('assets/img/logo_lndj.png');
+				background-size: 150px 150px;
+				background-repeat: no-repeat;
+				background-position: left center;
+				padding-left: 200px;
+				line-height: 170px;
+				margin-top : 0;
+				}
+
+			.front {
+				margin: 0 auto;
+				text-align: left;
+				padding: 100px 0;
+			}
+
+				.lessHeight {
+					padding: 80px 0;
+				}
+
+				.front h1 {
+					font-size: 30px;
+					font-family: 'open sans';
+					font-weight: 300;
+					margin: -20px 0 50px;
+				}
+
+			.third, .half {
+				float: left;
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				text-align: center;
+			}
+
+				.third {
+					width: 32%;
+					margin-right: 10px;
+				}
+
+				.half {
+					width: 45%;
+					padding-left: 20px;
+					text-align: justify;
+					margin-right: 5%;
+				}
+
+				.third h1 {
+					margin: 20px auto 0;
+					font-weight: 300;
+					font-size: 28px;
+				}
+
+				.third p {
+					font-size: 16px;
+				}
+
+				b {
+					font-weight: 400;
+				}
+
+				.bgbleu {
+					/*background: rgba(32, 62, 98, 0.9);*/
+					background: #F26522;
+					color: #fff;
+				}
+
+				p {
+					line-height: 24px;
+				}
+
+				.ti {
+					text-indent: 15px;
+					font-size: 18px;
+					line-height: 28px;
+				}
+
+				.form h2 {
+					font-size: 30px;
+					font-weight: 400;
+					/*color: rgba(32, 62, 98, 0.9);*/
+					color:  #F26522;
+				}
+
+.form input {
+	padding: 10px 5px;
+	border-radius: 3px;
+	border: solid 1px #ccc;
+	margin: 15px 0 0;
+	width: 300px;
+	text-indent: 5px;
+	font-family:'open sans';
+	font-weight: 300;
+	font-size: 16px;
+}
+
+	.form input:focus {
+		border-color: silver;
+		box-shadow: 1px 1px 3px silver inset;
+	}
+
+.form button {
+	margin: 15px 0 0;
+	background: #fff;
+	/*border: solid 1px rgba(32, 62, 98, 0.9);*/
+	border: solid 1px #F26522;
+	/*color: rgba(32, 62, 98, 0.9);*/
+	color:  #F26522;
+	padding: 10px 15px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-family:'open sans';
+	font-weight:300;
+	font-size: 16px;
+}
+
+	.form button:hover {
+		/*background: rgba(32, 62, 98, 0.9);*/
+		background: #F26522;
+		color: #fff;
+	}
+
+	.form button:active {
+		-moz-box-shadow: 0;
+		box-shadow: none;
+	}
+
+	.tcenter {
+		text-align: center;
+	}
+
+	.tcenter img {
+		margin-bottom: 20px;
+	}
+
+	.tjustify {
+		text-align: justify;
+	}
+
+		</style>
+	</head>
+
+	<body>
+
+		<header>
+			<div class="wrapper">
+				<span id="header_menu">
+					<a href="#">&Agrave; propos<b></b></a> - <a href="#">S'inscrire<b></b></a> - <a href="#">Se connecter<b></b></a>
+				</span>
+				<h1><!--<span id="logo"><img src="assets/img/logo.png" /></span>--></h1>
+			</div>
+		</header>
+
+		<section id="break">
+			<div class="wrapper">
+				<!-- <h1><i>Fictioneo</i>, un lieu o&ugrave; vous pouvez <span data-typer-targets="publier,partager,proposer,exposer,pr&eacute;senter,montrer,d&eacute;poser,d&eacute;voiler">partager</span> vos cr&eacute;ations litt&eacute;raires&hellip;</h1> -->
+				<!--<div class="third"><img src="assets/img/logo_lndj.png" height="170px" width="140px"/></div>-->
+				<h1 id="title">Les Nomades du jeu</h1>
+			</div>
+		</section>
+
+		<div class="front wrapper clearfix">
+
+			<div class="half tcenter">
+				<!--<img src="blockade.png" />-->
+				<p class="ti tjustify">Les Nomades du jeu est un projet qui a vu le jour grâce à deux personnes issues du travail social : 
+				l'un est animateur socio-professionnel quand l'autre a suivi une formation d'éducateur spécialisé.</p> <br />
+				
+				<p class="ti tjustify">Avec la volonté d'amener le jeu de société là où il n'a pu suffisamment se développer, les membres des Nomades du jeux se proposent d'intervenir 
+				dans de nombreux lieux et auprès de publics différents.</p>
+
+			</div>
+
+			<div class="half">
+				<div id="" class="form">
+					<h2>Se tenir informé :</h2>
+
+					<p><input type="text" name="email" placeholder=" Saisissez votre adresse mail"/></p>
+
+					<p><button>&#10004;&nbsp;&nbsp; Je veux recevoir les évènements</button></p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="front bgbleu clearfix lessHeight">
+
+			<div class="wrapper">
+
+				<h1>Une fois connect&eacute;, rien de plus <b>simple</b>. 3 choix s'offrent &agrave; vous :</h1>
+
+				<div class="third">
+					<img src="assets/img/pen.png" />
+					<h1>1. Ecrivez</h1>
+					<p>selon vos envies</p>
+				</div>
+				<div class="third">
+					<img src="assets/img/paperplane.png" />
+					<h1>2. Partagez</h1>
+					<p>vos cr&eacute;ations</p>
+				</div>
+				<div class="third">
+					<img src="assets/img/see.png" />
+					<h1>3. D&eacute;couvrez</h1>
+					<p>celles des autres</p>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="assets/js/jquery.typer.js"></script>
+
+		<script>
+			/*
+			var mots = ["publier","partager","proposer","exposer","pr&eacute;senter","montrer","d&eacute;poser","d&eacute;voiler"];
+
+			Array.prototype.rdm = function(){
+				return this[Math.floor(Math.random() * this.length)];
+			}
+
+			function changeWord(){
+				moto.innerHTML = mots.rdm();
+			}
+
+			setInterval(function(){
+				changeWord();
+			}, 5000);
+			*/
+
+			$(function(){
+				$.typer.options.highlightSpeed = 100;
+				$.typer.options.typerInterval = 3000;
+				$.typer.options.initialDelay = 3000;
+				$.typer.options.textColor = 'rgba(32, 62, 98, 0.9)';
+		    	$('[data-typer-targets]').typer();
+		    });
+		</script>
+
+	</body>
+</html>
