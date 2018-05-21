@@ -1,0 +1,88 @@
+/* Grid based on : http://www.webdesignerwall.com/tutorials/the-simpler-css-grid/ */
+.container {
+	width: 978px;
+	margin: 50px auto;
+}
+.grid1, .grid15, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11, .grid12 {
+	float: left;
+	display: inline;
+	margin-left: 30px;
+}
+.grid1 {
+	width: 54px;
+}
+
+.grid15 {
+	width: 120px;
+	margin-left: 25px;
+}
+.grid2 {
+	width: 138px;
+}
+.grid3 {
+	width: 222px;
+}
+.grid4 {
+	width: 306px;
+}
+.grid5 {
+	width: 390px;
+}
+.grid6 {
+	width: 474px;
+}
+.grid7 {
+	width: 558px;
+}
+.grid8 {
+	width: 642px;
+}
+.grid9 {
+	width: 726px;
+}
+.grid10 {
+	width: 810px;
+}
+.grid11 {
+	width: 894px;
+}
+.grid12 {
+	width: 980px;
+}
+.first, .grid12 {
+	margin-left: 0;
+	clear: left;
+}
+.last {
+	margin-right: 0;
+}
+
+/* clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+* html .clearfix {
+	zoom: 1;
+} /* IE6 */
+*:first-child+html .clearfix {
+	zoom: 1;
+} /* IE7 */
+
+/* NOTE: the following styles are for demo purpose (not required) */
+#container {
+	background: url(978-grid-bg.png) repeat-y; 
+} 
+
+.grid1, .grid15, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11, .grid12 {
+	/* margin-bottom: 100px; */
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: rgba(0,255,0,.2);
+	/* border: solid 1px #999;
+	border-width: 1px 0; */
+}

@@ -1,0 +1,368 @@
+/**
+** 1. Body
+** 2. Header
+** 3. Container
+**
+**
+**
+**/
+
+
+/****** BODY ******/
+body {
+	color: #656565;
+	background: #fafafa url('../img/background.png') repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height: 22px;
+}
+
+
+/****** CONTAINER ******/
+#wrapper {
+	background: #fcfcfc;
+	background: rgba(255, 255, 255, 0.6);
+	border-left: dashed 1px #F26522;
+	border-right: dashed 1px #F26522;
+	border-bottom: dashed 1px #F26522;
+	margin: 0 auto;
+	min-height: 500px;
+	width: 980px;
+}
+
+#header {
+	background: #fff;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+	#header h1 {
+		color: #F26522;
+		font-family: 'Permanent Marker', serif;
+		font-size: 77px;
+		font-style: normal;
+		font-weight: 400;
+		text-shadow: none;
+		text-decoration: none;
+		text-transform: none;
+		letter-spacing: 0em;
+		word-spacing: 0em;
+		line-height: 1.2;
+		pointer-events: none;
+	}
+
+#menu {
+	background: #fff url('../img/menuBackground.png') repeat-x;
+	border-bottom: dotted 1px #F26522;
+	position: relative;
+	text-align: center;
+	height: 70px; 
+}
+	
+
+	#menu div {
+		position:absolute; 
+		left:-9999px; 
+		text-align:center;
+		height: 35px;
+		padding:12px 0;
+		z-index:100; 
+		opacity:0;
+		-webkit-transition: opacity 0.3s ease-in-out;
+		-moz-transition: opacity 0.3s ease-in-out;
+		-o-transition: opacity 0.3s ease-in-out;
+		transition: opacity 0.3s ease-in-out;
+		width: 980px;
+	}
+
+	#menu div ul li a {
+		color: #F26522;
+	}
+	
+		#menu div ul li a:hover {
+			/* background-color: #F26522; */
+			/* color: #fff; */
+			text-decoration: underline;
+		}
+	
+	#menu ul {
+		padding:0;
+		margin:0;
+		list-style:none;
+	}
+
+	#menu ul li {
+		display:inline-block;
+		line-height:35px;
+	}
+
+		#menu ul li.last {
+			background:none;
+		}
+
+		#menu ul li a {
+			display:inline-block;
+			line-height:35px;
+			text-decoration:none;
+			color:#fff;
+			padding:0 15px;
+			font-weight:bold;
+		}
+
+			#menu ul li a:hover {
+				white-space:nowrap;
+				background: #fff;
+				color: #F26522;
+			}
+
+			#menu ul li:hover > a {
+				background: #fff;
+				color:#F26522;
+			}
+
+			#menu ul li a:hover b {
+				display:inline-block;
+				position:relative;
+				left:-40px;
+				padding-left:40px;
+				padding-right:40px;
+				margin-right:-80px;
+				cursor:pointer;
+			}
+
+			#menu ul :hover div {
+				left:0;
+				top:23px;
+				opacity:1;
+			}
+			
+
+#innerWrapper {
+	padding: 50px 30px;
+}
+
+h2 {
+	color: #F26522;
+	font-family: 'Permanent Marker', serif;
+	font-size: 22px;
+	margin-bottom: 25px;
+}
+
+h3 {
+	color: #F26522;
+	font-family: 'Permanent Marker', serif;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+/* ACCUEIL */
+#homePict {
+	background: #fff;
+	border: solid 1px #F26522;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 10px;
+	width: 400px;
+	float: left;
+}
+	
+	#homePict img {
+		border: dashed 1px #F26522;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		height: 250px;
+		width: 398px;
+	}
+	
+	#homePict p {
+		margin-top: 3px;
+	}
+	
+#homePres {
+	float: left;
+	padding: 5px 20px 10px 40px;
+	text-align: justify;
+	text-indent: 15px;
+	text-shadow: white 1px 1px 0px;
+	width: 420px;
+}
+	
+	#homePres p, #homeDesc p {
+		margin-bottom: 15px;
+	}
+	
+#homeDesc, #homeMap {
+	float: left;
+	padding: 10px;
+	text-align: justify;
+	text-indent: 15px;
+	text-shadow: white 1px 1px 0px;
+	width: 450px;
+}
+	
+	#homeMap {
+		text-align: right;
+		width: 350px;
+	}
+	
+
+	#horaires {
+		background: #fff;
+		border: solid 1px #F26522;
+		font-family: 'Permanent Marker', serif;
+		font-size: 14px;
+		/* font-weight: bold; */
+		margin: 0 auto;
+		padding: 8px 4px;
+		width: 900px;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+	}
+	
+		#horaires .title {
+			background: #F26522;
+			color: #fff;
+			display: inline;
+			font-family: 'Permanent Marker', serif;
+			/* font-weight: normal; */
+			margin-right: 5px;
+			padding: 5px;
+			border-radius: 3px;
+			-moz-border-radius: 3px;
+		}
+	
+	
+	
+/* CONTACT */
+#contactForm {
+	padding: 10px;
+	width: 400px;
+	float: left;
+	border-right: dashed 1px #F26522;
+}
+
+	#contactForm p.hint {
+		font-style: oblique;
+		margin-bottom: 20px;
+	}
+	
+	#contactForm p.hint, #contactForm label {
+		text-shadow: white 1px 1px 0px;
+	}
+
+	#contactForm input[type=text], #contactForm textarea {
+		border: solid 1px #ccc;
+		padding: 3px;
+		margin-bottom: 20px;
+		width: 350px;
+		/* -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px; */
+	}
+	
+		#contactForm textarea {
+			height: 150px;
+			resize: none;
+		}
+		
+		#contactForm input[type=text]:hover, #contactForm textarea:hover {
+			/* border-color: #656565; */
+		}
+		
+		#contactForm input[type=text]:focus, #contactForm textarea:focus {
+			border-color: #F26522;
+		}
+	
+	#contactForm input[type=submit] {
+		background: #fff;
+		border: solid 1px #ccc;
+		color: #F26522;
+		cursor: pointer;
+		padding: 5px;
+		margin-bottom: 20px;
+		width: 360px;
+	}
+	
+		#contactForm input[type=submit]:hover {
+			background: #F26522;
+			border: solid 1px #F26522;
+			color: #fff;
+		}
+	
+	
+#contactCoord {
+	float: left;
+	padding: 10px 40px;
+	text-align: justify;
+	text-indent: 15px;
+	width: 400px;
+}
+	
+	#contactCoord p {
+		margin-bottom: 15px;
+		text-shadow: white 1px 1px 0px;
+	}
+	
+		#contactCoord p.noMargin {
+			margin-bottom: 0;
+		}
+	
+	#contactCoord img {
+		border: solid 3px #fff;
+		outline: solid 1px #ccc;
+		-webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
+	}
+	
+		#contactCoord img:hover {
+			/* border-color: #F26522; */
+			outline-color: #F26522;
+		}
+	
+	
+	
+	
+#footer {
+	color: #F26522;
+	margin: 0 auto 50px;
+	padding: 10px;
+	width: 960px;
+}
+
+	.footSec  {
+		float: left;
+		width: 25%;
+	}
+	
+		.footSec a {
+			color: #F26522;
+			text-decoration: none;
+		}
+		
+			.footSec a:hover {
+				text-decoration: underline;
+			}
+	
+	#footRight {
+		text-align: right;
+	}
+	
+		#linkFb {
+			background: url('../img/facebook-icon.jpg') no-repeat right center;
+			padding-right: 22px;
+		}
+	
+			#linkFb a {
+				color: #F26522;
+			}
+			
+				#linkFb a:hover {
+					text-decoration: none;
+				}
+	
+	
+	
+	
+	
